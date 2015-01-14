@@ -1,0 +1,227 @@
+
+
+/*
+* CUSTOM STYLES
+*/
+
+h1,.h1 {
+  font-size: 32px;
+}
+h2,.h2 {
+  font-size: 26px;
+}
+
+h1,h2,h3,h4 {
+  font-family: Lato, "Helvetica Neue", Helvetica, Sans-serif;
+}
+
+/* navbar colors */
+.navbar {
+  .navbar-nav > li > a {
+    color: #fff;
+    &:hover, &:active {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+  /* fix logo image alignment */
+  .navbar-header {
+    a.logo {
+      margin: 0;
+      margin-top: 3px;
+    }
+  }
+}
+
+
+/* modify node-author */
+.title-author .node-author > a {
+  color: #808080;
+  text-decoration: none;
+}
+.title-author .node-author::before {
+  content: "- ";
+}
+
+section#block-system-main {
+  .node {
+    div.user-picture {
+      float: left;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top: 15px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+/* adjustment for full article view */
+body.not-front {
+  section#block-system-main {
+    .node {
+      div.user-picture {
+        float: left;
+        img {
+          width: 45px;
+          height: 45px;
+          margin-right: 10px;
+          margin-top: -14px;
+          border-radius: 50%;
+        }
+      }
+    div.comment {
+      span.new {
+        .label;
+        .label-success;
+        position: relative;
+        top: 14px;
+      }
+      div.user-picture {
+        img {
+          margin-top: 7px !important;
+        }
+      }
+    }
+
+    } //end:.node
+  } //end:block-system-main
+} //end:.not-front
+
+/* Adjustments for file attachments */
+div.content {
+  div.field-type-file {
+    margin-top: 1em;
+
+    div.field-label {
+      font-size: 18px;
+      margin-right: 1em;
+    }
+  }
+  span.file {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+}
+
+
+/* KALENDER */
+aside[role="complementary"] {
+  div.view {
+    div.view-header {
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.view .date-nav-wrapper .date-nav {
+  min-height: 35px;
+  height: 30px;
+}
+
+
+/* TAGS */
+.field-name-field-tags .field-item {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  border: 1px #a2a2a2 solid;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+.field-name-field-tags .field-item a {
+  color: #808080;
+}
+
+/* disable even/odd bgcolor in tables inside wells */
+.region-sidebar-second .table-striped > tbody > tr:nth-child(odd) > td {
+  background-color: transparent;
+}
+.table-striped > tbody > tr > td {
+  border-bottom: 1px #808080 solid;
+}
+
+/* FORUM */
+div#forum > table[id^="forum-"] {
+  width: 100%;
+}
+div#forum > table[id^="forum-"] thead th a {
+  color: #777;
+}
+
+div#forum > table[id^="forum-"] thead th {
+  height: 30px;
+  vertical-align: top;
+  border-bottom: 1px #CCC solid;
+}
+
+
+/* Background patterns from Rosa.pe: http://rosa.pe/2011/10/freebie-13-seamless-christmas-patterns/ */
+body {
+  background-image: url(../img/christmas_patterns/c_03_06.jpg);
+  background-repeat: repeat;
+  background-position: top right, top left;
+  background-color: #942626;
+}
+
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 4px 0px 40px rgba(0, 0, 0, 0.75);
+  border: 1px solid #000;
+}
+
+.main-container.container {
+  background-color: #FFF;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.webform-client-form .webform-component div.description {
+  font-size: 12px;
+  margin: 2px 5px;
+  color: #8F8F8F;
+}
+
+.region-content .node #comments .comment {
+  border: 2px solid #DCE4EC;
+  margin-left: 1.2em;
+  border-radius: 6px;
+  padding-left: 1em;
+  padding-bottom: 0.4em;
+}
+
+/* Markers -> label */
+span.marker {
+  .label;
+  .label-success;
+}
+
+/* Rate widget */
+.form-type-item.form-item.form-group {
+  margin-top: 1.5em;
+}
+
+.content {
+  .field-type-image {
+    margin: 1em 0;
+  }
+}
+
+div.region {
+  ul.list-inline {
+    margin-left: 0;
+  }
+}
+
+section#block-system-powered-by{
+  span {
+    border: 1px #ccc solid;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 4px;
+    border-radius: 3px;
+  }
+}
