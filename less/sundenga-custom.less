@@ -161,10 +161,10 @@ div#forum > table[id^="forum-"] thead th {
 
 /* Background patterns from Rosa.pe: http://rosa.pe/2011/10/freebie-13-seamless-christmas-patterns/ */
 body {
-  background-image: url(../img/christmas_patterns/c_03_06.jpg);
-  background-repeat: repeat;
+  background-image: url(../img/sky-gradient.jpg);
+  background-repeat: repeat-x;
   background-position: top right, top left;
-  background-color: #942626;
+  background-color: #a8ceff;
 }
 
 .navbar-default {
@@ -206,14 +206,21 @@ span.marker {
 }
 
 .content {
+  /* author avatars */
   .field-type-image {
     margin: 1em 0;
+  }
+  /* tags */
+  .field-name-field-tags {
+    margin-top: 10px;
   }
 }
 
 div.region {
   ul.list-inline {
-    margin-left: 0;
+    /* extra margin+bottom-border between posts */
+    padding: 0px 0 15px 0;
+    border-bottom: 1px #6889C4 solid;
   }
 }
 
